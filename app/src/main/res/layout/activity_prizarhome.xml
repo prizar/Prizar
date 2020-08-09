@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimarySplash"
+    >
+
+<!--    <TextView-->
+<!--        android:id="@+id/menu_text"-->
+<!--        android:layout_width="@dimen/_200sdp"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:background="@drawable/prizarhome_top"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:textStyle="normal"-->
+<!--        android:text="Make Money By Prizar     "-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textAlignment="gravity"-->
+<!--        android:textSize="@dimen/_20sdp" />-->
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_below="@+id/menu_text"
+
+        android:background="@drawable/prizarhome_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_45sdp"
+             android:tint="@color/white"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_59sdp"
+            android:text="Muhammad Adnan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/see_profile"
+            android:layout_below="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_59sdp"
+            android:text="See your profile"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+
+        android:layout_centerVertical="true"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/prizarhome_menu"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/my_bonds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/my_bonds_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:tint="@color/white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_my_bonds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_bonds_img"
+
+                android:layout_marginTop="0dp"
+                android:text="My Bonds"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/draw_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/my_bonds">
+
+            <ImageView
+                android:id="@+id/draw_list_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_draw_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/draw_list_img"
+                android:text="Draw Lists"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_prizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/draw_list">
+
+            <ImageView
+                android:id="@+id/my_prizes_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_my_prizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_prizes_img"
+                android:text="My Prizes"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_bond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/my_prizes">
+
+            <ImageView
+                android:id="@+id/scan_bond_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_scan_bond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_bond_img"
+                android:text="Scan Bonds"
+                android:textColor="#ffffff"
+
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_bonds"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/schedule_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/schedule_img"
+
+                android:text="Schedule"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prize_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/draw_list"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/schedule">
+
+            <ImageView
+                android:id="@+id/prize_value_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:tint="@color/white"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/text_prize_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prize_value_img"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Prize Value"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_prizes"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/prize_value">
+
+            <ImageView
+                android:id="@+id/updates_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/updates_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/updates_img"
+                android:text="Updates"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scan_bond"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/updates">
+
+            <ImageView
+                android:id="@+id/logout_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <TextView
+                android:id="@+id/logout_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logout_img"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Logout Prizar"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/help_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_24sdp"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_help_black_24dp" />
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textSize="@dimen/_18sdp"
+            android:text="Help and Support"
+            android:layout_marginLeft="@dimen/_29sdp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

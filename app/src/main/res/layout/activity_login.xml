@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:background="@color/color">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_70sdp"
+                android:text="PRIZAR"
+                android:layout_marginLeft="@dimen/_39sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/balooregular"
+               />
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_logo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_100sdp"-->
+<!--                android:layout_marginTop="@dimen/_40sdp"-->
+<!--                android:src="@drawable/prizarsplashhh" />-->
+
+            <ImageView
+                android:id="@+id/box"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/loginhome" />
+
+            <RelativeLayout
+                android:id="@+id/rl_login_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_logo">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_passs"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:textColorHint="#000000"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/pidentity"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:maxLength="30"
+                        android:hint="Email or phone"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_15sdp"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_passs"
+
+                    android:layout_marginLeft="@dimen/_20sdp"
+
+                    android:textColorHint="#000000"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/passicon"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:hint="Password"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_15sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/rl_login_fields"
+                android:layout_marginLeft="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/btn_sgnin"
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:background="@drawable/prizarhome_menu"
+                    android:gravity="center"
+                    android:text="PROCEED"
+                    android:onClick="postData"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_btns">
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:onClick="OpenSignupPage"
+                    android:text="SIGN UP"
+
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_160sdp"
+
+                    android:text="FORGET PASSWORD"
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

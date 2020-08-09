@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimarySplash"
+    tools:context="com.prizar.ActivityHome">
+
+    <TextView
+        android:id="@+id/menu_text"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:background="@drawable/loginhome"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Search Prize Bond     "
+        android:textAlignment="gravity"
+        android:textSize="@dimen/_20sdp" />
+    <RelativeLayout
+        android:layout_below="@+id/menu_text"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_45sdp"
+
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="Muhammad Adnan Malik"
+            android:layout_marginLeft="@dimen/_59sdp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/see_profile"
+            android:layout_below="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_59sdp"
+            android:text="See your profile"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:id="@+id/single_bond"
+            android:textColor="#000000"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hometabs"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="@color/colorPrimary"
+
+
+            android:text="Search Single Prize Bond "/>
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:id="@+id/multiple_bond"
+            android:textColor="#000000"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hometabs"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Search Multiple Prize Bond "/>
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:id="@+id/series_bond"
+            android:textColor="#000000"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hometabs"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Search Prize Bond Series "/>
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:id="@+id/logout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginhome"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Log Out" />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/help_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_24sdp"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_help_black_24dp" />
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textSize="@dimen/_18sdp"
+            android:text="Help and Support"
+            android:layout_marginLeft="@dimen/_29sdp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
